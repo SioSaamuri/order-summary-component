@@ -1,0 +1,170 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display";
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.background-color {
+  z-index: -1;
+}
+
+.main-container {
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 450px;
+  height: 697px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero-text h1 {
+  font-size: 28px;
+  color: #1f2e55;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 45px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #717fa6;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 17px;
+}
+
+.plan-container {
+  width: 354px;
+  border-radius: 11px;
+  background-color: #f7f9ff;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 21px 0px;
+}
+
+.plan-container a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #382ae1;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.plan-container a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.price-card {
+  padding-right: 0;
+  margin-right: auto;
+}
+
+.plan-container h2 {
+  font-size: 16px;
+  font-weight: 900;
+  color: #1f2e55;
+}
+.plan-container p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #717fa6;
+}
+
+.music-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  margin-left: 24px;
+}
+
+.payment-btn {
+  margin-top: 32px;
+  width: 354px;
+  height: 50px;
+  border-radius: 11px;
+  background-color: #382ae1;
+  font-size: 15px;
+  font-weight: 900;
+  color: #ffffff;
+  border-style: none;
+  text-align: center;
+  /* box-shadow: 0 20px 20px #382ae1; */
+  box-shadow: 0px 20px 20px 0 #382ae131;
+}
+
+.payment-btn:hover {
+  background-color: #766cf1;
+}
+
+.cancel-order {
+  margin-top: 32px;
+  color: #717fa6;
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.cancel-order:hover {
+  color: black;
+}
+
+@media screen and (max-width: 375px) {
+  .main-container {
+    width: 327px;
+  }
+
+  .hero-text {
+    margin: 0 20px;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .plan-container {
+    width: 279px;
+  }
+
+  .payment-btn {
+    width: 279px;
+  }
+}
